@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed+token_guard,500,50,document_id+source+page+chapter+chapter_title+language,none,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Fixed windows provide a baseline,2/15,5/15,0/5,0/5,"Retrospective summary from saved config and results; not a newly preregistered hypothesis. 362 chunks; ingest 143.235755s; API 0 USD."
+B,paragraph_line+token_guard,500,0,document_id+source+page+chapter+chapter_title+language,none,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Line and heading boundaries may preserve context better,4/15,5/15,0/5,0/5,"Retrospective hypothesis; coherence assessed after test. 321 chunks; ingest 95.500583s; API 0 USD."
+C,identical_to_B,500,0,document_id+source+page+chapter+chapter_title+language,question_supplied_chapter_only,sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2,Chapter filtering may remove out-of-scope candidates,5/15,7/15,0/5,0/5,"Retrospective summary; selection C recorded before test in dev_selection.json. B vectors reused; incremental ingest 0.981314s; API 0 USD."

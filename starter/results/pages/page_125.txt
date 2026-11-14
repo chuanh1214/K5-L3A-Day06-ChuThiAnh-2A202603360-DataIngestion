@@ -1,0 +1,28 @@
+Chapter 11
+Dictionaries
+This chapter presents another built-in type called a dictionary. Dictionaries are one of
+Python’s best features; they are the building blocks of many efficient and elegant algo-
+rithms.
+11.1 A dictionary is a mapping
+Adictionaryis like a list, but more general. In a list, the indices have to be integers; in a
+dictionary they can be (almost) any type.
+A dictionary contains a collection of indices, which are calledkeys, and a collection of
+values. Each key is associated with a single value. The association of a key and a value is
+called akey-value pairor sometimes anitem.
+In mathematical language, a dictionary represents amappingfrom keys to values, so you
+can also say that each key “maps to” a value. As an example, we’ll build a dictionary that
+maps from English to Spanish words, so the keys and the values are all strings.
+The functiondictcreates a new dictionary with no items. Becausedictis the name of a
+built-in function, you should avoid using it as a variable name.
+>>> eng2sp = dict()
+>>> eng2sp
+{}
+The squiggly-brackets,{}, represent an empty dictionary. To add items to the dictionary,
+you can use square brackets:
+>>> eng2sp['one'] ='uno'
+This line creates an item that maps from the key'one'to the value'uno'. If we print the
+dictionary again, we see a key-value pair with a colon between the key and value:
+>>> eng2sp
+{'one':'uno'}
+This output format is also an input format. For example, you can create a new dictionary
+with three items:

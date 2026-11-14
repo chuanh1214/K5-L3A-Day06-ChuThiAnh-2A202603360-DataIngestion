@@ -1,0 +1,44 @@
+{
+  "selected_strategy": "C",
+  "collection": "thinkpython2_e8412522c5d43b8e",
+  "selected_before_test_at": "2026-11-13T20:37:57.665779+00:00",
+  "criterion": "dev Hit@3; then Hit@1; then fewer chunks; then name for exact ties",
+  "ranking": [
+    {
+      "strategy": "C",
+      "split": "dev",
+      "questions": 15,
+      "hit1_count": 5,
+      "hit1": 0.3333333333333333,
+      "hit3_count": 7,
+      "hit3": 0.4666666666666667,
+      "filter_questions": 2,
+      "filter_compliant_count": 2,
+      "filter_compliance": 1.0
+    },
+    {
+      "strategy": "B",
+      "split": "dev",
+      "questions": 15,
+      "hit1_count": 4,
+      "hit1": 0.26666666666666666,
+      "hit3_count": 5,
+      "hit3": 0.3333333333333333,
+      "filter_questions": 2,
+      "filter_compliant_count": 0,
+      "filter_compliance": 0.0
+    },
+    {
+      "strategy": "A",
+      "split": "dev",
+      "questions": 15,
+      "hit1_count": 2,
+      "hit1": 0.13333333333333333,
+      "hit3_count": 5,
+      "hit3": 0.3333333333333333,
+      "filter_questions": 2,
+      "filter_compliant_count": 0,
+      "filter_compliance": 0.0
+    }
+  ]
+}

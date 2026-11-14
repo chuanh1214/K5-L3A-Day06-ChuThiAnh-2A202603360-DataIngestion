@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-11-13T20:43:44.087296+00:00",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "dimensions": 384,
+  "max_tokens": 128,
+  "model_load_seconds": 73.4015539999964,
+  "collection": "thinkpython2_e8412522c5d43b8e",
+  "database": {
+    "postgres": "16.16 (Debian 16.16-1.pgdg12+1)",
+    "pgvector": "0.8.7"
+  },
+  "persistence_reopen_verified": true,
+  "paid_api_cost_usd": 0.0,
+  "packages": {
+    "sentence-transformers": "6.3.0",
+    "transformers": "5.23.0",
+    "torch": "2.15.0",
+    "numpy": "2.5.4",
+    "pgvector": "0.5.1",
+    "psycopg": "3.3.8"
+  }
+}

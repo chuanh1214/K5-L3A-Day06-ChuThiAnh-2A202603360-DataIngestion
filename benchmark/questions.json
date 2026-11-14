@@ -1,0 +1,236 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "type": "direct",
+    "question": "Chỉ số âm trong chuỗi đếm từ phía nào?",
+    "expected_answer": "Chỉ số âm đếm ngược từ cuối chuỗi.",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 94,
+    "evidence_quote": "Or you can use negative indices, which count backward from the end of the string.",
+    "filter": null
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "type": "condition",
+    "question": "Điều gì xảy ra khi dùng số thực làm chỉ số để truy cập một ký tự trong chuỗi?",
+    "expected_answer": "Python báo TypeError vì chỉ số chuỗi phải là số nguyên.",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 94,
+    "evidence_quote": "But the value of the index has to be an integer. Otherwise you get:\n>>> letter = fruit[1.5]\nTypeError: string indices must be integers",
+    "filter": null
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "Vì sao không thể thay một ký tự của chuỗi bằng cách gán vào vị trí của ký tự đó?",
+    "expected_answer": "Chuỗi là immutable nên không thể thay đổi một chuỗi đã tồn tại; cần tạo chuỗi mới.",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 96,
+    "evidence_quote": "The reason for the error is that strings areimmutable, which means you can’t change an\nexisting string. The best you can do is create a new string that is a variation on the original:",
+    "filter": null
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "type": "metadata_condition",
+    "question": "Trong chương 8, vị trí kết thúc truyền cho phương thức find có được tính vào phạm vi tìm kiếm không?",
+    "expected_answer": "Không. Phạm vi tìm kiếm không bao gồm vị trí kết thúc.",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 98,
+    "evidence_quote": "This search fails becausebdoes not appear in the index range from1to2, not including2.\nSearching up to, but not including, the second index makesfindconsistent with the slice\noperator.",
+    "filter": {"chapter": 8}
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "Sách đề xuất cách nào để giảm khác biệt hoa/thường trước khi so sánh các chuỗi?",
+    "expected_answer": "Chuyển các chuỗi về cùng một định dạng, chẳng hạn chuyển tất cả sang chữ thường, trước khi so sánh.",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 99,
+    "evidence_quote": "A common way to address this problem is to convert strings to a standard format, such as\nall lowercase, before performing the comparison.",
+    "filter": null
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "type": "direct",
+    "question": "Phương thức nào của file object đọc các ký tự đến ký tự xuống dòng và trả về một chuỗi?",
+    "expected_answer": "Phương thức readline().",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 105,
+    "evidence_quote": "The file object provides several\nmethods for reading, includingreadline, which reads characters from the file until it gets\nto a newline and returns the result as a string:",
+    "filter": null
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "Trong ví dụ đọc danh sách từ, sách dùng phương thức nào để bỏ ký tự xuống dòng khỏi dòng vừa đọc?",
+    "expected_answer": "Dùng phương thức strip() trên chuỗi vừa đọc, như word = line.strip().",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 106,
+    "evidence_quote": "Or, if it’s the newline character that’s bothering you, we can get rid of it with the\nstring methodstrip:\n>>> line = fin.readline()\n>>> word = line.strip()",
+    "filter": null
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "type": "condition",
+    "question": "Hàm uses_all trả về True khi từ đầu vào đáp ứng điều kiện nào đối với các ký tự required?",
+    "expected_answer": "Từ phải chứa tất cả các ký tự trong required ít nhất một lần; thiếu bất kỳ ký tự bắt buộc nào thì trả về False.",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 106,
+    "evidence_quote": "Exercise 9.5.Write a function nameduses_allthat takes a word and a string of required letters,\nand that returnsTrueif the word uses all the required letters at least once.",
+    "gold_alternatives": [
+      {
+        "gold_source_id": "thinkpython2-v2.4.1",
+        "gold_page": 107,
+        "evidence_quote": "def uses_all(word, required):\nfor letter in required:\nif letter not in word:\nreturn False\nreturn True\nInstead of traversing the letters inword, the loop traverses the required letters. If any of the\nrequired letters do not appear in the word, we can returnFalse."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "List khác string như thế nào về khả năng thay đổi phần tử?",
+    "expected_answer": "List là mutable, có thể thay đổi phần tử tại chỗ; string thì không.",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 112,
+    "evidence_quote": "Unlike strings, lists are mutable. When the bracket operator appears on the left side of an\nassignment, it identifies the element of the list that will be assigned.",
+    "filter": null
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "type": "metadata_condition",
+    "question": "Trong chương 10, vì sao phép gán t = t.sort() gây kết quả không mong muốn?",
+    "expected_answer": "sort() sửa list tại chỗ và trả về None, vì vậy phép gán làm t trở thành None.",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 114,
+    "evidence_quote": "Most list methods are void; they modify the list and returnNone. If you accidentally write\nt = t.sort(), you will be disappointed with the result.",
+    "gold_alternatives": [
+      {
+        "gold_source_id": "thinkpython2-v2.4.1",
+        "gold_page": 121,
+        "evidence_quote": "t = t.sort() # WRONG!\nBecausesortreturnsNone, the next operation you perform withtis likely to fail."
+      }
+    ],
+    "filter": {"chapter": 10}
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "type": "condition",
+    "question": "Phương thức pop() của list làm gì khi không truyền chỉ số?",
+    "expected_answer": "Xóa và trả về phần tử cuối cùng của list.",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 116,
+    "evidence_quote": "popmodifies the list and returns the element that was removed. If you don’t provide an\nindex, it deletes and returns the last element.",
+    "filter": null
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "type": "direct",
+    "question": "Muốn ghép một list các chuỗi thành một chuỗi bằng delimiter, dùng phương thức nào và gọi trên đối tượng nào?",
+    "expected_answer": "Dùng join(), gọi trên chuỗi delimiter và truyền list làm đối số: delimiter.join(list_chuoi).",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 117,
+    "evidence_quote": "joinis the inverse ofsplit. It takes a list of strings and concatenates the elements.joinis\na string method, so you have to invoke it on the delimiter and pass the list as a parameter:",
+    "filter": null
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "Hai list chứa cùng các phần tử có nhất thiết phải là cùng một object không?",
+    "expected_answer": "Không. Hai list có thể equivalent vì cùng giá trị nhưng không identical vì là hai object khác nhau.",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 118,
+    "evidence_quote": "In this case we would say that the two lists areequivalent, because they have the same el-\nements, but notidentical, because they are not the same object.",
+    "filter": null
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "type": "condition",
+    "question": "dict.get(key, default) trả về gì khi key không tồn tại trong dictionary?",
+    "expected_answer": "Trả về giá trị default đã truyền vào thay vì truy cập một key không tồn tại.",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 127,
+    "evidence_quote": "Dictionaries have a method calledgetthat takes a key and a default value. If the key\nappears in the dictionary,getreturns the corresponding value; otherwise it returns the\ndefault value.",
+    "filter": null
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "Vì sao list không thể được dùng làm key của dictionary?",
+    "expected_answer": "Dictionary key phải hashable, trong khi list là kiểu mutable và không hashable.",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 130,
+    "evidence_quote": "That’s why keys have to be hashable, and why mutable types like lists aren’t.",
+    "filter": null
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "type": "direct",
+    "question": "Có thể đảo ngược chuỗi s bằng biểu thức slicing nào dùng bước -1?",
+    "expected_answer": "Dùng s[::-1].",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 102,
+    "evidence_quote": "A step size of -1 goes through the word backwards, so the slice[::-1]generates a reversed string.",
+    "filter": null
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "type": "condition",
+    "question": "Khi slicing một list mà bỏ cả chỉ số bắt đầu và kết thúc, kết quả là gì?",
+    "expected_answer": "Một bản sao của toàn bộ list, ví dụ t[:].",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 114,
+    "evidence_quote": "If you omit the first index, the slice starts at the beginning. If you omit the second, the slice\ngoes to the end. So if you omit both, the slice is a copy of the whole list.",
+    "filter": null
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "type": "metadata_condition",
+    "question": "Trong chương 12, cần thêm ký hiệu gì để tạo một tuple chỉ có một phần tử?",
+    "expected_answer": "Cần dấu phẩy sau phần tử, ví dụ ('a',); chỉ có dấu ngoặc như ('a') không tạo tuple.",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 137,
+    "evidence_quote": "To create a tuple with a single element, you have to include a final comma:\n>>> t1 ='a',\n>>> type(t1)\n<class'tuple'>\nA value in parentheses is not a tuple:\n>>> t2 = ('a')\n>>> type(t2)\n<class'str'>",
+    "filter": {"chapter": 12}
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "type": "direct",
+    "question": "Hai thành phần mà hàm divmod trả về là gì?",
+    "expected_answer": "Một tuple gồm thương nguyên và số dư.",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 139,
+    "evidence_quote": "The built-in functiondivmodtakes two arguments and returns a tuple of two values, the\nquotient and remainder.",
+    "filter": null
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "type": "condition",
+    "question": "Nếu các sequence truyền vào zip có độ dài khác nhau, số cặp tạo ra được quyết định như thế nào?",
+    "expected_answer": "Số cặp bằng độ dài của sequence ngắn nhất.",
+    "gold_source_id": "thinkpython2-v2.4.1",
+    "gold_page": 141,
+    "evidence_quote": "If the sequences are not the same length, the result has the length of the shorter one.",
+    "filter": null
+  }
+]

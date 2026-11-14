@@ -1,0 +1,29 @@
+Chapter 8
+Strings
+Strings are not like integers, floats, and booleans. A string is asequence, which means it is
+an ordered collection of other values. In this chapter you’ll see how to access the characters
+that make up a string, and you’ll learn about some of the methods strings provide.
+8.1 A string is a sequence
+A string is a sequence of characters. You can access the characters one at a time with the
+bracket operator:
+>>> fruit ='banana'
+>>> letter = fruit[1]
+The second statement selects character number 1 fromfruitand assigns it toletter.
+The expression in brackets is called anindex. The index indicates which character in the
+sequence you want (hence the name).
+But you might not get what you expect:
+>>> letter
+'a'
+For most people, the first letter of'banana'isb, nota. But for computer scientists, the
+index is an offset from the beginning of the string, and the offset of the first letter is zero.
+>>> letter = fruit[0]
+>>> letter
+'b'
+Sobis the 0th letter (“zero-eth”) of'banana',ais the 1th letter (“one-eth”), andnis the 2th
+letter (“two-eth”).
+As an index you can use an expression that contains variables and operators:
+>>> i = 1
+>>> fruit[i]
+'a'
+>>> fruit[i+1]
+'n'

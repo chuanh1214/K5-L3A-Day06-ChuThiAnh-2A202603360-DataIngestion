@@ -1,0 +1,46 @@
+12.5. Lists and tuples 119
+>>> for pair in zip(s, t):
+... print(pair)
+...
+('a', 0)
+('b', 1)
+('c', 2)
+A zip object is a kind ofiterator, which is any object that iterates through a sequence.
+Iterators are similar to lists in some ways, but unlike lists, you can’t use an index to select
+an element from an iterator.
+If you want to use list operators and methods, you can use a zip object to make a list:
+>>> list(zip(s, t))
+[('a', 0), ('b', 1), ('c', 2)]
+The result is a list of tuples; in this example, each tuple contains a character from the string
+and the corresponding element from the list.
+If the sequences are not the same length, the result has the length of the shorter one.
+>>> list(zip('Anne','Elk'))
+[('A','E'), ('n','l'), ('n','k')]
+You can use tuple assignment in aforloop to traverse a list of tuples:
+t = [('a', 0), ('b', 1), ('c', 2)]
+for letter, number in t:
+print(number, letter)
+Each time through the loop, Python selects the next tuple in the list and assigns the ele-
+ments toletterandnumber. The output of this loop is:
+0 a
+1 b
+2 c
+If you combinezip,forand tuple assignment, you get a useful idiom for traversing two
+(or more) sequences at the same time. For example,has_matchtakes two sequences,t1
+andt2, and returnsTrueif there is an indexisuch thatt1[i] == t2[i]:
+def has_match(t1, t2):
+for x, y in zip(t1, t2):
+if x == y:
+return True
+return False
+If you need to traverse the elements of a sequence and their indices, you can use the built-in
+functionenumerate:
+for index, element in enumerate('abc'):
+print(index, element)
+The result fromenumerateis an enumerate object, which iterates a sequence of pairs; each
+pair contains an index (starting from 0) and an element from the given sequence. In this
+example, the output is
+0 a
+1 b
+2 c
+Again.

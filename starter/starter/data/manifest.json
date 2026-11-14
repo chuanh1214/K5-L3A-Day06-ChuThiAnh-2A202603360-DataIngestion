@@ -1,0 +1,383 @@
+{
+  "source_id": "thinkpython2-v2.4.1",
+  "title": "Think Python, 2nd Edition",
+  "author": "Allen B. Downey",
+  "source_path_or_url": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+  "local_path": "starter/starter/data/raw/thinkpython2.pdf",
+  "license_or_permission": "CC BY-NC 3.0",
+  "version": "2.4.1",
+  "candidate_pdf_pages": {
+    "start": 93,
+    "end": 146
+  },
+  "accessed_at": "2026-11-13",
+  "sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+  "content_page_count": 52,
+  "page_numbering": "Original PDF physical pages, starting at 1",
+  "pages": [
+    {
+      "page": 93,
+      "characters": 1185,
+      "chapter": 8,
+      "chapter_title": "Strings",
+      "language": "en"
+    },
+    {
+      "page": 94,
+      "characters": 1830,
+      "chapter": 8,
+      "chapter_title": "Strings",
+      "language": "en"
+    },
+    {
+      "page": 95,
+      "characters": 1477,
+      "chapter": 8,
+      "chapter_title": "Strings",
+      "language": "en"
+    },
+    {
+      "page": 96,
+      "characters": 1441,
+      "chapter": 8,
+      "chapter_title": "Strings",
+      "language": "en"
+    },
+    {
+      "page": 97,
+      "characters": 1901,
+      "chapter": 8,
+      "chapter_title": "Strings",
+      "language": "en"
+    },
+    {
+      "page": 98,
+      "characters": 1543,
+      "chapter": 8,
+      "chapter_title": "Strings",
+      "language": "en"
+    },
+    {
+      "page": 99,
+      "characters": 1590,
+      "chapter": 8,
+      "chapter_title": "Strings",
+      "language": "en"
+    },
+    {
+      "page": 100,
+      "characters": 1988,
+      "chapter": 8,
+      "chapter_title": "Strings",
+      "language": "en"
+    },
+    {
+      "page": 101,
+      "characters": 1969,
+      "chapter": 8,
+      "chapter_title": "Strings",
+      "language": "en"
+    },
+    {
+      "page": 102,
+      "characters": 1699,
+      "chapter": 8,
+      "chapter_title": "Strings",
+      "language": "en"
+    },
+    {
+      "page": 103,
+      "characters": 522,
+      "chapter": 8,
+      "chapter_title": "Strings",
+      "language": "en"
+    },
+    {
+      "page": 105,
+      "characters": 1827,
+      "chapter": 9,
+      "chapter_title": "Case study: word play",
+      "language": "en"
+    },
+    {
+      "page": 106,
+      "characters": 2488,
+      "chapter": 9,
+      "chapter_title": "Case study: word play",
+      "language": "en"
+    },
+    {
+      "page": 107,
+      "characters": 2068,
+      "chapter": 9,
+      "chapter_title": "Case study: word play",
+      "language": "en"
+    },
+    {
+      "page": 108,
+      "characters": 1752,
+      "chapter": 9,
+      "chapter_title": "Case study: word play",
+      "language": "en"
+    },
+    {
+      "page": 109,
+      "characters": 1992,
+      "chapter": 9,
+      "chapter_title": "Case study: word play",
+      "language": "en"
+    },
+    {
+      "page": 110,
+      "characters": 2736,
+      "chapter": 9,
+      "chapter_title": "Case study: word play",
+      "language": "en"
+    },
+    {
+      "page": 111,
+      "characters": 1183,
+      "chapter": 10,
+      "chapter_title": "Lists",
+      "language": "en"
+    },
+    {
+      "page": 112,
+      "characters": 1462,
+      "chapter": 10,
+      "chapter_title": "Lists",
+      "language": "en"
+    },
+    {
+      "page": 113,
+      "characters": 1498,
+      "chapter": 10,
+      "chapter_title": "Lists",
+      "language": "en"
+    },
+    {
+      "page": 114,
+      "characters": 1265,
+      "chapter": 10,
+      "chapter_title": "Lists",
+      "language": "en"
+    },
+    {
+      "page": 115,
+      "characters": 1637,
+      "chapter": 10,
+      "chapter_title": "Lists",
+      "language": "en"
+    },
+    {
+      "page": 116,
+      "characters": 1432,
+      "chapter": 10,
+      "chapter_title": "Lists",
+      "language": "en"
+    },
+    {
+      "page": 117,
+      "characters": 1629,
+      "chapter": 10,
+      "chapter_title": "Lists",
+      "language": "en"
+    },
+    {
+      "page": 118,
+      "characters": 1488,
+      "chapter": 10,
+      "chapter_title": "Lists",
+      "language": "en"
+    },
+    {
+      "page": 119,
+      "characters": 1291,
+      "chapter": 10,
+      "chapter_title": "Lists",
+      "language": "en"
+    },
+    {
+      "page": 120,
+      "characters": 1480,
+      "chapter": 10,
+      "chapter_title": "Lists",
+      "language": "en"
+    },
+    {
+      "page": 121,
+      "characters": 1362,
+      "chapter": 10,
+      "chapter_title": "Lists",
+      "language": "en"
+    },
+    {
+      "page": 122,
+      "characters": 1833,
+      "chapter": 10,
+      "chapter_title": "Lists",
+      "language": "en"
+    },
+    {
+      "page": 123,
+      "characters": 3070,
+      "chapter": 10,
+      "chapter_title": "Lists",
+      "language": "en"
+    },
+    {
+      "page": 124,
+      "characters": 375,
+      "chapter": 10,
+      "chapter_title": "Lists",
+      "language": "en"
+    },
+    {
+      "page": 125,
+      "characters": 1485,
+      "chapter": 11,
+      "chapter_title": "Dictionaries",
+      "language": "en"
+    },
+    {
+      "page": 126,
+      "characters": 1959,
+      "chapter": 11,
+      "chapter_title": "Dictionaries",
+      "language": "en"
+    },
+    {
+      "page": 127,
+      "characters": 2139,
+      "chapter": 11,
+      "chapter_title": "Dictionaries",
+      "language": "en"
+    },
+    {
+      "page": 128,
+      "characters": 1311,
+      "chapter": 11,
+      "chapter_title": "Dictionaries",
+      "language": "en"
+    },
+    {
+      "page": 129,
+      "characters": 1870,
+      "chapter": 11,
+      "chapter_title": "Dictionaries",
+      "language": "en"
+    },
+    {
+      "page": 130,
+      "characters": 2148,
+      "chapter": 11,
+      "chapter_title": "Dictionaries",
+      "language": "en"
+    },
+    {
+      "page": 131,
+      "characters": 1456,
+      "chapter": 11,
+      "chapter_title": "Dictionaries",
+      "language": "en"
+    },
+    {
+      "page": 132,
+      "characters": 1898,
+      "chapter": 11,
+      "chapter_title": "Dictionaries",
+      "language": "en"
+    },
+    {
+      "page": 133,
+      "characters": 2218,
+      "chapter": 11,
+      "chapter_title": "Dictionaries",
+      "language": "en"
+    },
+    {
+      "page": 134,
+      "characters": 2147,
+      "chapter": 11,
+      "chapter_title": "Dictionaries",
+      "language": "en"
+    },
+    {
+      "page": 135,
+      "characters": 3254,
+      "chapter": 11,
+      "chapter_title": "Dictionaries",
+      "language": "en"
+    },
+    {
+      "page": 137,
+      "characters": 1202,
+      "chapter": 12,
+      "chapter_title": "Tuples",
+      "language": "en"
+    },
+    {
+      "page": 138,
+      "characters": 1495,
+      "chapter": 12,
+      "chapter_title": "Tuples",
+      "language": "en"
+    },
+    {
+      "page": 139,
+      "characters": 1680,
+      "chapter": 12,
+      "chapter_title": "Tuples",
+      "language": "en"
+    },
+    {
+      "page": 140,
+      "characters": 1532,
+      "chapter": 12,
+      "chapter_title": "Tuples",
+      "language": "en"
+    },
+    {
+      "page": 141,
+      "characters": 1769,
+      "chapter": 12,
+      "chapter_title": "Tuples",
+      "language": "en"
+    },
+    {
+      "page": 142,
+      "characters": 2123,
+      "chapter": 12,
+      "chapter_title": "Tuples",
+      "language": "en"
+    },
+    {
+      "page": 143,
+      "characters": 1897,
+      "chapter": 12,
+      "chapter_title": "Tuples",
+      "language": "en"
+    },
+    {
+      "page": 144,
+      "characters": 1955,
+      "chapter": 12,
+      "chapter_title": "Tuples",
+      "language": "en"
+    },
+    {
+      "page": 145,
+      "characters": 2406,
+      "chapter": 12,
+      "chapter_title": "Tuples",
+      "language": "en"
+    },
+    {
+      "page": 146,
+      "characters": 1720,
+      "chapter": 12,
+      "chapter_title": "Tuples",
+      "language": "en"
+    }
+  ]
+}

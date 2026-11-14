@@ -1,0 +1,42 @@
+106 Chapter 11. Dictionaries
+1
+>>> h.get('c', 0)
+0
+As an exercise, usegetto writehistogrammore concisely. You should be able to eliminate
+theifstatement.
+11.3 Looping and dictionaries
+If you use a dictionary in aforstatement, it traverses the keys of the dictionary. For exam-
+ple,print_histprints each key and the corresponding value:
+def print_hist(h):
+for c in h:
+print(c, h[c])
+Here’s what the output looks like:
+>>> h = histogram('parrot')
+>>> print_hist(h)
+a 1
+p 1
+r 2
+t 1
+o 1
+Again, the keys are in no particular order. To traverse the keys in sorted order, you can use
+the built-in functionsorted:
+>>> for key in sorted(h):
+... print(key, h[key])
+a 1
+o 1
+p 1
+r 2
+t 1
+11.4 Reverse lookup
+Given a dictionarydand a keyk, it is easy to find the corresponding valuev = d[k]. This
+operation is called alookup.
+But what if you havevand you want to findk? You have two problems: first, there might
+be more than one key that maps to the valuev. Depending on the application, you might
+be able to pick one, or you might have to make a list that contains all of them. Second,
+there is no simple syntax to do areverse lookup; you have to search.
+Here is a function that takes a value and returns the first key that maps to that value:
+def reverse_lookup(d, v):
+for k in d:
+if d[k] == v:
+return k
+raise LookupError()

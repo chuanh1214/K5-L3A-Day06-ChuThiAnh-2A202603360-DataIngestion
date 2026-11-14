@@ -1,0 +1,44 @@
+11.6. Memos 109
+fibonacci
+n 4
+fibonacci
+n 3
+fibonacci
+n 2
+fibonacci
+n 0
+fibonacci
+n 1
+fibonacci
+n 1
+fibonacci
+n 2
+fibonacci
+n 0
+fibonacci
+n 1
+Figure 11.2: Call graph.
+Since dictionaries are mutable, they can’t be used as keys, but theycanbe used as values.
+11.6 Memos
+If you played with thefibonaccifunction from Section 6.7, you might have noticed that
+the bigger the argument you provide, the longer the function takes to run. Furthermore,
+the run time increases quickly.
+To understand why, consider Figure 11.2, which shows thecall graphforfibonacciwith
+n=4:
+A call graph shows a set of function frames, with lines connecting each frame to the frames
+of the functions it calls. At the top of the graph,fibonacciwithn=4callsfibonacciwith
+n=3andn=2. In turn,fibonacciwithn=3callsfibonacciwithn=2andn=1. And so on.
+Count how many timesfibonacci(0)andfibonacci(1)are called. This is an inefficient
+solution to the problem, and it gets worse as the argument gets bigger.
+One solution is to keep track of values that have already been computed by storing them
+in a dictionary. A previously computed value that is stored for later use is called amemo.
+Here is a “memoized” version offibonacci:
+known = {0:0, 1:1}
+def fibonacci(n):
+if n in known:
+return known[n]
+res = fibonacci(n-1) + fibonacci(n-2)
+known[n] = res
+return res
+knownis a dictionary that keeps track of the Fibonacci numbers we already know. It starts
+with two items: 0 maps to 0 and 1 maps to 1.

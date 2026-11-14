@@ -1,0 +1,55 @@
+﻿page,chapter,characters,include,reason
+93,8,1185,1,String indexing explanation and examples are readable; some words merged
+94,8,1830,1,Length and traversal explanations are readable; code indentation lost
+95,8,1477,1,String slicing explanation is readable; figure flattened and code indentation lost
+96,8,1441,1,Empty slices and string immutability explained; search code indentation lost
+97,8,1901,1,Search and counting and string methods explained; code indentation lost
+98,8,1543,1,Find bounds and substring membership explained; code indentation lost
+99,8,1590,1,String comparison and debugging explained; code indentation lost
+100,8,1988,1,IndexError debugging explanation is readable; diagram context continues on next page
+101,8,1969,1,Useful glossary and string exercises; diagram flattened and some words merged
+102,8,1699,1,Useful slicing and Caesar cipher exercises; lowercase-test code indentation lost
+103,8,522,1,Substantive exercise continuation on chr and character codes and ROT13; retain with page 102
+104,8,21,0,Only printed page number and chapter running header; no substantive body content
+105,9,1827,1,Word-list reading and file-object explanation with examples; some words merged
+106,9,2488,1,Line stripping explanation and word-filtering exercises; code indentation lost
+107,9,2068,1,Search-pattern explanations and problem reduction are readable; code indentation lost
+108,9,1752,1,Indexed traversal explanation and palindrome example; code indentation lost and continues on page 109
+109,9,1992,1,Substantive debugging guidance and glossary; continues code from page 108
+110,9,2736,1,Complete word and palindrome search exercise requirements; some words merged
+111,10,1183,1,List definitions and construction examples are readable; some words merged
+112,10,1462,1,List mutability and indexing explanation is readable; state diagram flattened
+113,10,1498,1,List traversal and operations explained; code indentation lost
+114,10,1265,1,List slices and append and extend and sort explained; some words merged
+115,10,1637,1,Map and reduce and filtering explanations are readable; code indentation lost
+116,10,1432,1,List deletion and string-to-list conversion explained; some words merged
+117,10,1629,1,Split and join and object identity explained; state diagram flattened
+118,10,1488,1,Equivalence and identity and aliasing explained; state diagrams flattened
+119,10,1291,1,List arguments and mutation explained; stack diagram flattened and code indentation lost
+120,10,1480,1,Mutation versus reassignment and debugging explained; code indentation lost
+121,10,1362,1,List debugging and copying guidance with useful examples; some words merged
+122,10,1833,1,Useful list glossary and cumulative-sum and nested-list exercises; some words merged
+123,10,3070,1,Substantive list exercises and binary-search guidance; final exercise continues on page 124
+124,10,375,1,Two substantive interlocking-word exercise requirements; short continuation of page 123
+125,11,1485,1,Dictionary mapping and key-value construction explained; some words merged
+126,11,1959,1,Dictionary lookup and membership explanations are readable; historical ordering claim retained as source content
+127,11,2139,1,Dictionary counters and get defaults explained; code indentation lost
+128,11,1311,1,Dictionary traversal and reverse lookup explained; code indentation lost
+129,11,1870,1,Lookup exceptions and dictionary inversion explained; code indentation lost
+130,11,2148,1,Hashability and dictionary values explained; state diagram flattened and some words merged
+131,11,1456,1,Memoization explanation is readable; call graph flattened and code indentation lost
+132,11,1898,1,Global-variable scope and reassignment explained; code indentation lost
+133,11,2218,1,Global mutation and substantive debugging guidance; code indentation lost
+134,11,2147,1,Debugging output guidance and substantive dictionary glossary; some words merged
+135,11,3254,1,Substantive dictionary exercises and homophone problem requirements; some words merged
+136,11,151,0,Only closing instruction for previous exercise and external solution link; excluded conservatively
+137,12,1202,1,Tuple definition and singleton construction explained; heading split as T uples
+138,12,1495,1,Tuple immutability and comparison and assignment explained; some words merged
+139,12,1680,1,Tuple unpacking and divmod return values explained; code indentation lost
+140,12,1532,1,Variable arguments and gather and scatter and zip explained; code indentation lost
+141,12,1769,1,Zip length rule and iteration and enumerate explained; code indentation lost
+142,12,2123,1,Dictionary items and tuple keys explained; code indentation lost
+143,12,1897,1,Sequence-selection trade-offs are readable; state diagrams flattened
+144,12,1955,1,Shape-error debugging examples and tuple glossary are readable; some words merged
+145,12,2406,1,Useful glossary and anagram and metathesis exercises; some words merged
+146,12,1720,1,Substantive reducible-word exercise and recursive solution guidance; some words merged

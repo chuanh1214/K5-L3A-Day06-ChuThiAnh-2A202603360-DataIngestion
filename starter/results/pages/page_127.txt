@@ -1,0 +1,44 @@
+11.2. Dictionary as a collection of counters 105
+1. You could create 26 variables, one for each letter of the alphabet. Then you could tra-
+verse the string and, for each character, increment the corresponding counter, proba-
+bly using a chained conditional.
+2. You could create a list with 26 elements. Then you could convert each character to
+a number (using the built-in functionord), use the number as an index into the list,
+and increment the appropriate counter.
+3. You could create a dictionary with characters as keys and counters as the correspond-
+ing values. The first time you see a character, you would add an item to the dictionary.
+After that you would increment the value of an existing item.
+Each of these options performs the same computation, but each of them implements that
+computation in a different way.
+Animplementationis a way of performing a computation; some implementations are
+better than others. For example, an advantage of the dictionary implementation is that we
+don’t have to know ahead of time which letters appear in the string and we only have to
+make room for the letters that do appear.
+Here is what the code might look like:
+def histogram(s):
+d = dict()
+for c in s:
+if c not in d:
+d[c] = 1
+else:
+d[c] += 1
+return d
+The name of the function ishistogram, which is a statistical term for a collection of counters
+(or frequencies).
+The first line of the function creates an empty dictionary. Theforloop traverses the string.
+Each time through the loop, if the charactercis not in the dictionary, we create a new item
+with keycand the initial value 1 (since we have seen this letter once). Ifcis already in the
+dictionary we incrementd[c].
+Here’s how it works:
+>>> h = histogram('brontosaurus')
+>>> h
+{'a': 1,'b': 1,'o': 2,'n': 1,'s': 2,'r': 2,'u': 2,'t': 1}
+The histogram indicates that the letters'a'and'b'appear once;'o'appears twice, and
+so on.
+Dictionaries have a method calledgetthat takes a key and a default value. If the key
+appears in the dictionary,getreturns the corresponding value; otherwise it returns the
+default value. For example:
+>>> h = histogram('a')
+>>> h
+{'a': 1}
+>>> h.get('a', 0)

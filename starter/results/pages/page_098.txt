@@ -1,0 +1,43 @@
+76 Chapter 8. Strings
+This form of dot notation specifies the name of the method,upper, and the name of the
+string to apply the method to,word. The empty parentheses indicate that this method
+takes no arguments.
+A method call is called aninvocation; in this case, we would say that we are invoking
+upperonword.
+As it turns out, there is a string method namedfindthat is remarkably similar to the
+function we wrote:
+>>> word ='banana'
+>>> index = word.find('a')
+>>> index
+1
+In this example, we invokefindonwordand pass the letter we are looking for as a param-
+eter.
+Actually, thefindmethod is more general than our function; it can find substrings, not just
+characters:
+>>> word.find('na')
+2
+By default,findstarts at the beginning of the string, but it can take a second argument, the
+index where it should start:
+>>> word.find('na', 3)
+4
+This is an example of anoptional argument;findcan also take a third argument, the index
+where it should stop:
+>>> name ='bob'
+>>> name.find('b', 1, 2)
+-1
+This search fails becausebdoes not appear in the index range from1to2, not including2.
+Searching up to, but not including, the second index makesfindconsistent with the slice
+operator.
+8.9 Theinoperator
+The wordinis a boolean operator that takes two strings and returnsTrueif the first ap-
+pears as a substring in the second:
+>>>'a'in'banana'
+True
+>>>'seed'in'banana'
+False
+For example, the following function prints all the letters fromword1that also appear in
+word2:
+def in_both(word1, word2):
+for letter in word1:
+if letter in word2:
+print(letter)

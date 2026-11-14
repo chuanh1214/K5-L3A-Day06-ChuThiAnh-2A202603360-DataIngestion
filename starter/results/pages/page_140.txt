@@ -1,0 +1,39 @@
+118 Chapter 12. T uples
+12.4 Variable-length argument tuples
+Functions can take a variable number of arguments. A parameter name that begins with
+*gathersarguments into a tuple. For example,printalltakes any number of arguments
+and prints them:
+def printall(*args):
+print(args)
+The gather parameter can have any name you like, butargsis conventional. Here’s how
+the function works:
+>>> printall(1, 2.0,'3')
+(1, 2.0,'3')
+The complement of gather isscatter. If you have a sequence of values and you want to pass
+it to a function as multiple arguments, you can use the*operator. For example,divmod
+takes exactly two arguments; it doesn’t work with a tuple:
+>>> t = (7, 3)
+>>> divmod(t)
+TypeError: divmod expected 2 arguments, got 1
+But if you scatter the tuple, it works:
+>>> divmod(*t)
+(2, 1)
+Many of the built-in functions use variable-length argument tuples. For example,maxand
+mincan take any number of arguments:
+>>> max(1, 2, 3)
+3
+Butsumdoes not.
+>>> sum(1, 2, 3)
+TypeError: sum expected at most 2 arguments, got 3
+As an exercise, write a function calledsum_allthat takes any number of arguments and
+returns their sum.
+12.5 Lists and tuples
+zipis a built-in function that takes two or more sequences and interleaves them. The name
+of the function refers to a zipper, which interleaves two rows of teeth.
+This example zips a string and a list:
+>>> s ='abc'
+>>> t = [0, 1, 2]
+>>> zip(s, t)
+<zip object at 0x7f7d0a9e7c48>
+The result is azip objectthat knows how to iterate through the pairs. The most common
+use ofzipis in aforloop:

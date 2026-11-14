@@ -1,0 +1,39 @@
+10.13. Debugging 99
+t = t.sort() # WRONG!
+BecausesortreturnsNone, the next operation you perform withtis likely to fail.
+Before using list methods and operators, you should read the documentation care-
+fully and then test them in interactive mode.
+2. Pick an idiom and stick with it.
+Part of the problem with lists is that there are too many ways to do things. For exam-
+ple, to remove an element from a list, you can usepop,remove,del, or even a slice
+assignment.
+To add an element, you can use theappendmethod or the+operator. Assuming that
+tis a list andxis a list element, these are correct:
+t.append(x)
+t = t + [x]
+t += [x]
+And these are wrong:
+t.append([x]) # WRONG!
+t = t.append(x) # WRONG!
+t + [x] # WRONG!
+t = t + x # WRONG!
+Try out each of these examples in interactive mode to make sure you understand
+what they do. Notice that only the last one causes a runtime error; the other three are
+legal, but they do the wrong thing.
+3. Make copies to avoid aliasing.
+If you want to use a method likesortthat modifies the argument, but you need to
+keep the original list as well, you can make a copy.
+>>> t = [3, 1, 2]
+>>> t2 = t[:]
+>>> t2.sort()
+>>> t
+[3, 1, 2]
+>>> t2
+[1, 2, 3]
+In this example you could also use the built-in functionsorted, which returns a new,
+sorted list and leaves the original alone.
+>>> t2 = sorted(t)
+>>> t
+[3, 1, 2]
+>>> t2
+[1, 2, 3]

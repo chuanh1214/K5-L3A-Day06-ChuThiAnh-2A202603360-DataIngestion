@@ -1,0 +1,38 @@
+74 Chapter 8. Strings
+'ban'
+>>> fruit[3:]
+'ana'
+If the first index is greater than or equal to the second the result is anempty string, repre-
+sented by two quotation marks:
+>>> fruit ='banana'
+>>> fruit[3:3]
+''
+An empty string contains no characters and has length 0, but other than that, it is the same
+as any other string.
+Continuing this example, what do you thinkfruit[:]means? Try it and see.
+8.5 Strings are immutable
+It is tempting to use the[]operator on the left side of an assignment, with the intention of
+changing a character in a string. For example:
+>>> greeting ='Hello, world!'
+>>> greeting[0] ='J'
+TypeError:'str'object does not support item assignment
+The “object” in this case is the string and the “item” is the character you tried to assign.
+For now, an object is the same thing as a value, but we will refine that definition later
+(Section 10.10).
+The reason for the error is that strings areimmutable, which means you can’t change an
+existing string. The best you can do is create a new string that is a variation on the original:
+>>> greeting ='Hello, world!'
+>>> new_greeting ='J'+ greeting[1:]
+>>> new_greeting
+'Jello, world!'
+This example concatenates a new first letter onto a slice ofgreeting. It has no effect on the
+original string.
+8.6 Searching
+What does the following function do?
+def find(word, letter):
+index = 0
+while index < len(word):
+if word[index] == letter:
+return index
+index = index + 1
+return -1

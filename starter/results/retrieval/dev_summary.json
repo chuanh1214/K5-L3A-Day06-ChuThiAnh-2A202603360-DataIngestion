@@ -1,0 +1,42 @@
+{
+  "metric": "Full quote on one gold source/page; NFC + whitespace only",
+  "human_equivalent_evidence_review": "not performed",
+  "results": [
+    {
+      "strategy": "A",
+      "split": "dev",
+      "questions": 15,
+      "hit1_count": 2,
+      "hit1": 0.13333333333333333,
+      "hit3_count": 5,
+      "hit3": 0.3333333333333333,
+      "filter_questions": 2,
+      "filter_compliant_count": 0,
+      "filter_compliance": 0.0
+    },
+    {
+      "strategy": "B",
+      "split": "dev",
+      "questions": 15,
+      "hit1_count": 4,
+      "hit1": 0.26666666666666666,
+      "hit3_count": 5,
+      "hit3": 0.3333333333333333,
+      "filter_questions": 2,
+      "filter_compliant_count": 0,
+      "filter_compliance": 0.0
+    },
+    {
+      "strategy": "C",
+      "split": "dev",
+      "questions": 15,
+      "hit1_count": 5,
+      "hit1": 0.3333333333333333,
+      "hit3_count": 7,
+      "hit3": 0.4666666666666667,
+      "filter_questions": 2,
+      "filter_compliant_count": 2,
+      "filter_compliance": 1.0
+    }
+  ]
+}

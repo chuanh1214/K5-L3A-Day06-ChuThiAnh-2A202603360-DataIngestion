@@ -1,0 +1,46 @@
+10.15. Exercises 101
+Exercise 10.4.Write a function calledchopthat takes a list, modifies it by removing the first and
+last elements, and returnsNone. For example:
+>>> t = [1, 2, 3, 4]
+>>> chop(t)
+>>> t
+[2, 3]
+Exercise 10.5.Write a function calledis_sortedthat takes a list as a parameter and returnsTrue
+if the list is sorted in ascending order andFalseotherwise. For example:
+>>> is_sorted([1, 2, 2])
+True
+>>> is_sorted(['b','a'])
+False
+Exercise 10.6.Two words are anagrams if you can rearrange the letters from one to spell the other.
+Write a function calledis_anagramthat takes two strings and returnsTrueif they are anagrams.
+Exercise 10.7.Write a function calledhas_duplicatesthat takes a list and returnsTrueif there
+is any element that appears more than once. It should not modify the original list.
+Exercise 10.8.This exercise pertains to the so-called Birthday Paradox, which you can read about
+athttp: // en. wikipedia. org/ wiki/ Birthday_ paradox.
+If there are 23 students in your class, what are the chances that two of them have the same birthday?
+You can estimate this probability by generating random samples of 23 birthdays and checking for
+matches. Hint: you can generate random birthdays with therandintfunction in therandom
+module.
+You can download my solution fromhttps: // thinkpython. com/ code/ birthday. py.
+Exercise 10.9.Write a function that reads the filewords.txtand builds a list with one element
+per word. Write two versions of this function, one using theappendmethod and the other using
+the idiomt = t + [x]. Which one takes longer to run? Why?
+Solution:https: // thinkpython. com/ code/ wordlist. py.
+Exercise 10.10.To check whether a word is in the word list, you could use theinoperator, but it
+would be slow because it searches through the words in order.
+Because the words are in alphabetical order, we can speed things up with a bisection search (also
+known as binary search), which is similar to what you do when you look a word up in the dictionary
+(the book, not the data structure). You start in the middle and check to see whether the word you are
+looking for comes before the word in the middle of the list. If so, you search the first half of the list
+the same way. Otherwise you search the second half.
+Either way, you cut the remaining search space in half. If the word list has 113,809 words, it will
+take about 17 steps to find the word or conclude that it’s not there.
+Write a function calledin_bisectthat takes a sorted list and a target value and returnsTrueif
+the word is in the list andFalseif it’s not.
+Or you could read the documentation of thebisectmodule and use that! Solution:https:
+// thinkpython. com/ code/ inlist. py.
+Exercise 10.11.Two words are a “reverse pair” if each is the reverse of the other. Write a program
+that finds all the reverse pairs in the word list. Solution:https: // thinkpython. com/ code/
+reverse_ pair. py.
+Exercise 10.12.Two words “interlock” if taking alternating letters from each forms a new
+word. For example, “shoe” and “cold” interlock to form “schooled”. Solution:https: //

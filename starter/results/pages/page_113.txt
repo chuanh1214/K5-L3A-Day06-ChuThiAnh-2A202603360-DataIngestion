@@ -1,0 +1,37 @@
+10.3. Traversing a list 91
+10.3 Traversing a list
+The most common way to traverse the elements of a list is with aforloop. The syntax is
+the same as for strings:
+for cheese in cheeses:
+print(cheese)
+This works well if you only need to read the elements of the list. But if you want to write
+or update the elements, you need the indices. A common way to do that is to combine the
+built-in functionsrangeandlen:
+for i in range(len(numbers)):
+numbers[i] = numbers[i] * 2
+This loop traverses the list and updates each element.lenreturns the number of elements
+in the list.rangereturns a list of indices from 0 ton−1, wherenis the length of the list.
+Each time through the loopigets the index of the next element. The assignment statement
+in the body usesito read the old value of the element and to assign the new value.
+Aforloop over an empty list never runs the body:
+for x in []:
+print('This never happens.')
+Although a list can contain another list, the nested list still counts as a single element. The
+length of this list is four:
+['spam', 1, ['Brie','Roquefort','Pol le Veq'], [1, 2, 3]]
+10.4 List operations
+The+operator concatenates lists:
+>>> a = [1, 2, 3]
+>>> b = [4, 5, 6]
+>>> c = a + b
+>>> c
+[1, 2, 3, 4, 5, 6]
+The*operator repeats a list a given number of times:
+>>> [0] * 4
+[0, 0, 0, 0]
+>>> [1, 2, 3] * 3
+[1, 2, 3, 1, 2, 3, 1, 2, 3]
+The first example repeats[0]four times. The second example repeats the list[1, 2, 3]
+three times.
+10.5 List slices
+The slice operator also works on lists:

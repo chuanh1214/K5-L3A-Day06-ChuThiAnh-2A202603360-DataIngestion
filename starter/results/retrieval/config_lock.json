@@ -1,0 +1,40 @@
+{
+  "locked_at": "2026-11-13T20:24:51.363669+00:00",
+  "collection": "thinkpython2_e8412522c5d43b8e",
+  "config": {
+    "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "model_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "device": "cpu",
+    "document_and_query_encoding": "same encode(); normalized; no prefix",
+    "metric": "cosine",
+    "search": "exact; SQL filter before ranking",
+    "top_k": 3,
+    "A": {
+      "chunking": "fixed",
+      "size": 500,
+      "overlap": 50
+    },
+    "B": {
+      "chunking": "paragraph_line",
+      "max_size": 500,
+      "overlap": 0
+    },
+    "C": {
+      "chunks_and_vectors": "identical to B",
+      "filter": "question input only"
+    },
+    "token_guard": "split overflow chunks for A/B/C; never silently truncate",
+    "pdf_sha256": "6033000bac3f9268ad75ee041bf8e5d9a3bc8a33bb156399cbd014918cb59f94",
+    "manifest_sha256": "c6536b8ba6ef36a2c1038885fc97a843e6cfea40483449acd58864f881118df9",
+    "corpus_text_sha256": "ac56914ed0dbc75655c07d33b19c059c3d9433aefd2fb76e4589da2f7ea0802a",
+    "questions_sha256": "4e0f973c46f4866644f103f488f23a4e9a4e7dd41a96679104bc3b60c5f4e25a",
+    "pipeline_source_sha256": {
+      "chunking.py": "7c62bb29c527ef8619dfd6fb73690ea6a1795bacfb34ef2972d0b1085b4a4909",
+      "embeddings.py": "462d600d1ea7dedf876386dda3b0dd574918cf6d2fee40c7ad5450da6d81d6a4",
+      "store.py": "a582d335af4ea929c562071e8f768b8e7111ec233b2032be3c6585a5410bc182",
+      "evaluation.py": "6e723f47b61af559bbc2a145b0252ecf82053eb2f1d5c7ed51339e5901128eed",
+      "run.py": "a155d5be1939dea53ccdd0b6fe4a7f20a24e886cb18ddc29e747e78737034aa7"
+    },
+    "accepted_pages": 52
+  }
+}

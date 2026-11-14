@@ -1,0 +1,39 @@
+12.3. T uples as return values 117
+The left side is a tuple of variables; the right side is a tuple of expressions. Each value
+is assigned to its respective variable. All the expressions on the right side are evaluated
+before any of the assignments.
+The number of variables on the left and the number of values on the right have to be the
+same:
+>>> a, b = 1, 2, 3
+ValueError: too many values to unpack
+More generally, the right side can be any kind of sequence (string, list or tuple). For exam-
+ple, to split an email address into a user name and a domain, you could write:
+>>> addr ='monty@python.org'
+>>> uname, domain = addr.split('@')
+The return value fromsplitis a list with two elements; the first element is assigned to
+uname, the second todomain.
+>>> uname
+'monty'
+>>> domain
+'python.org'
+12.3 T uples as return values
+Strictly speaking, a function can only return one value, but if the value is a tuple, the effect
+is the same as returning multiple values. For example, if you want to divide two integers
+and compute the quotient and remainder, it is inefficient to computex//yand thenx%y. It
+is better to compute them both at the same time.
+The built-in functiondivmodtakes two arguments and returns a tuple of two values, the
+quotient and remainder. You can store the result as a tuple:
+>>> t = divmod(7, 3)
+>>> t
+(2, 1)
+Or use tuple assignment to store the elements separately:
+>>> quot, rem = divmod(7, 3)
+>>> quot
+2
+>>> rem
+1
+Here is an example of a function that returns a tuple:
+def min_max(t):
+return min(t), max(t)
+maxandminare built-in functions that find the largest and smallest elements of a sequence.
+min_maxcomputes both and returns a tuple of two values.

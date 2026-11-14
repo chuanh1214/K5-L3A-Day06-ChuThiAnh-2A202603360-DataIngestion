@@ -1,0 +1,40 @@
+8.4. String slices 73
+fruit b a n na a ’
+0 1 2 3 4 5 6index
+’
+Figure 8.1: Slice indices.
+Each time through the loop, the next character in the string is assigned to the variable
+letter. The loop continues until no characters are left.
+The following example shows how to use concatenation (string addition) and aforloop
+to generate an abecedarian series (that is, in alphabetical order). In Robert McCloskey’s
+bookMake Way for Ducklings, the names of the ducklings are Jack, Kack, Lack, Mack, Nack,
+Ouack, Pack, and Quack. This loop outputs these names in order:
+prefixes ='JKLMNOPQ'
+suffix ='ack'
+for letter in prefixes:
+print(letter + suffix)
+The output is:
+Jack
+Kack
+Lack
+Mack
+Nack
+Oack
+Pack
+Qack
+Of course, that’s not quite right because “Ouack” and “Quack” are misspelled. As an
+exercise, modify the program to fix this error.
+8.4 String slices
+A segment of a string is called aslice. Selecting a slice is similar to selecting a character:
+>>> s ='Monty Python'
+>>> s[0:5]
+'Monty'
+>>> s[6:12]
+'Python'
+The operator[n:m]returns the part of the string from the “n-eth” character to the “m-eth”
+character, including the first but excluding the last. This behavior is counterintuitive, but
+it might help to imagine the indices pointingbetweenthe characters, as in Figure 8.1.
+If you omit the first index (before the colon), the slice starts at the beginning of the string.
+If you omit the second index, the slice goes to the end of the string:
+>>> fruit ='banana'
+>>> fruit[:3]

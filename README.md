@@ -1,5 +1,11 @@
 # Day 06 · Data Ingestion Engineering
 
+## Bài thực hành hiện tại
+
+Corpus: Think Python 2e, 52 trang nội dung đã chốt. Bộ benchmark 20 câu và validator nằm trong [benchmark](benchmark/README.md).
+Code chunking, embedding local và pgvector retrieval A/B/C: xem [hướng dẫn chạy](docs/RETRIEVAL.md).
+Kết quả và năm khía cạnh đánh giá được tổng hợp trong [báo cáo Chu Thị Anh](report/individual/2A202603360_ChuThiAnh.md). Minh chứng gồm [grounding](starter/results/retrieval/grounding_audit.csv), [metadata](starter/results/retrieval/metadata_audit.csv), [coherence](starter/results/retrieval/coherence_audit.csv) và [nhật ký thí nghiệm](artifacts/experiment_log.csv). Các nhãn do AI hỗ trợ, có công bố phương pháp và giới hạn trong báo cáo; coherence mới bổ sung cần tác giả xem lại trước khi nộp. Các phần bên dưới là yêu cầu đề bài.
+
 **Lab cá nhân** · **4 giờ** · **Dữ liệu tự chọn**
 
 Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, rồi đo xem cách chuẩn bị dữ liệu nào hiệu quả nhất.

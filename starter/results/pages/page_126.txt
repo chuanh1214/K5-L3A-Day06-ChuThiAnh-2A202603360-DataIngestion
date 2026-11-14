@@ -1,0 +1,40 @@
+104 Chapter 11. Dictionaries
+>>> eng2sp = {'one':'uno','two':'dos','three':'tres'}
+But if you printeng2sp, you might be surprised:
+>>> eng2sp
+{'one':'uno','three':'tres','two':'dos'}
+The order of the key-value pairs might not be the same. If you type the same example
+on your computer, you might get a different result. In general, the order of items in a
+dictionary is unpredictable.
+But that’s not a problem because the elements of a dictionary are never indexed with inte-
+ger indices. Instead, you use the keys to look up the corresponding values:
+>>> eng2sp['two']
+'dos'
+The key'two'always maps to the value'dos'so the order of the items doesn’t matter.
+If the key isn’t in the dictionary, you get an exception:
+>>> eng2sp['four']
+KeyError:'four'
+Thelenfunction works on dictionaries; it returns the number of key-value pairs:
+>>> len(eng2sp)
+3
+Theinoperator works on dictionaries, too; it tells you whether something appears as akey
+in the dictionary (appearing as a value is not good enough).
+>>>'one'in eng2sp
+True
+>>>'uno'in eng2sp
+False
+To see whether something appears as a value in a dictionary, you can use the method
+values, which returns a collection of values, and then use theinoperator:
+>>> vals = eng2sp.values()
+>>>'uno'in vals
+True
+Theinoperator uses different algorithms for lists and dictionaries. For lists, it searches the
+elements of the list in order, as in Section 8.6. As the list gets longer, the search time gets
+longer in direct proportion.
+Python dictionaries use a data structure called ahashtablethat has a remarkable property:
+theinoperator takes about the same amount of time no matter how many items are in the
+dictionary. I explain how that’s possible in Section B.4, but the explanation might not make
+sense until you’ve read a few more chapters.
+11.2 Dictionary as a collection of counters
+Suppose you are given a string and you want to count how many times each letter appears.
+There are several ways you could do it:

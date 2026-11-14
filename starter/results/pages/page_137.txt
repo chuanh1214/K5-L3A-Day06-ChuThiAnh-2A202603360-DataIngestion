@@ -1,0 +1,29 @@
+Chapter 12
+T uples
+This chapter presents one more built-in type, the tuple, and then shows how lists, dictionar-
+ies, and tuples work together. I also present a useful feature for variable-length argument
+lists, the gather and scatter operators.
+One note: there is no consensus on how to pronounce “tuple”. Some people say “tuh-
+ple”, which rhymes with “supple”. But in the context of programming, most people say
+“too-ple”, which rhymes with “quadruple”.
+12.1 T uples are immutable
+A tuple is a sequence of values. The values can be any type, and they are indexed by
+integers, so in that respect tuples are a lot like lists. The important difference is that tuples
+are immutable.
+Syntactically, a tuple is a comma-separated list of values:
+>>> t ='a','b','c','d','e'
+Although it is not necessary, it is common to enclose tuples in parentheses:
+>>> t = ('a','b','c','d','e')
+To create a tuple with a single element, you have to include a final comma:
+>>> t1 ='a',
+>>> type(t1)
+<class'tuple'>
+A value in parentheses is not a tuple:
+>>> t2 = ('a')
+>>> type(t2)
+<class'str'>
+Another way to create a tuple is the built-in functiontuple. With no argument, it creates
+an empty tuple:
+>>> t = tuple()
+>>> t
+()

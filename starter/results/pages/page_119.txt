@@ -1,0 +1,46 @@
+10.12. List arguments 97
+0
+1
+2
+’a’
+’b’
+’c’
+list
+t
+letters
+delete_head
+__main__
+Figure 10.5: Stack diagram.
+>>> b[0] = 42
+>>> a
+[42, 2, 3]
+Although this behavior can be useful, it is error-prone. In general, it is safer to avoid
+aliasing when you are working with mutable objects.
+For immutable objects like strings, aliasing is not as much of a problem. In this example:
+a ='banana'
+b ='banana'
+It almost never makes a difference whetheraandbrefer to the same string or not.
+10.12 List arguments
+When you pass a list to a function, the function gets a reference to the list. If the function
+modifies the list, the caller sees the change. For example,delete_headremoves the first
+element from a list:
+def delete_head(t):
+del t[0]
+Here’s how it is used:
+>>> letters = ['a','b','c']
+>>> delete_head(letters)
+>>> letters
+['b','c']
+The parametertand the variablelettersare aliases for the same object. The stack diagram
+looks like Figure 10.5.
+Since the list is shared by two frames, I drew it between them.
+It is important to distinguish between operations that modify lists and operations that cre-
+ate new lists. For example, theappendmethod modifies a list, but the+operator creates a
+new list.
+Here’s an example usingappend:
+>>> t1 = [1, 2]
+>>> t2 = t1.append(3)
+>>> t1
+[1, 2, 3]
+>>> t2
+None

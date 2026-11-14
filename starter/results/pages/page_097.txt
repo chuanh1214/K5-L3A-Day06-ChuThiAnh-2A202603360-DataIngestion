@@ -1,0 +1,37 @@
+8.7. Looping and counting 75
+In a sense,findis the inverse of the[]operator. Instead of taking an index and extracting
+the corresponding character, it takes a character and finds the index where that character
+appears. If the character is not found, the function returns-1.
+This is the first example we have seen of areturnstatement inside a loop. Ifword[index]
+== letter, the function breaks out of the loop and returns immediately.
+If the character doesn’t appear in the string, the program exits the loop normally and re-
+turns-1.
+This pattern of computation—traversing a sequence and returning when we find what we
+are looking for—is called asearch.
+As an exercise, modifyfindso that it has a third parameter, the index inwordwhere it
+should start looking.
+8.7 Looping and counting
+The following program counts the number of times the letteraappears in a string:
+word ='banana'
+count = 0
+for letter in word:
+if letter =='a':
+count = count + 1
+print(count)
+This program demonstrates another pattern of computation called acounter. The variable
+countis initialized to 0 and then incremented each time anais found. When the loop exits,
+countcontains the result—the total number ofa’s.
+As an exercise, encapsulate this code in a function namedcount, and generalize it so that
+it accepts the string and the letter as arguments.
+Then rewrite the function so that instead of traversing the string, it uses the three-
+parameter version offindfrom the previous section.
+8.8 String methods
+Strings provide methods that perform a variety of useful operations. A method is similar
+to a function—it takes arguments and returns a value—but the syntax is different. For
+example, the methoduppertakes a string and returns a new string with all uppercase
+letters.
+Instead of the function syntaxupper(word), it uses the method syntaxword.upper().
+>>> word ='banana'
+>>> new_word = word.upper()
+>>> new_word
+'BANANA'

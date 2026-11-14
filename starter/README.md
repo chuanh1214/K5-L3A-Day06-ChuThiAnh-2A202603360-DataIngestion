@@ -1,5 +1,11 @@
 # Starter · PostgreSQL + pgvector
 
+## Pipeline đã triển khai cho bài thực hành này
+
+Các module chunking, embedding local, pgvector và retrieval A/B/C đã được hiện thực.
+Xem [hướng dẫn chạy hiện tại](../docs/RETRIEVAL.md): chạy `python -m src.run --stage dev` rồi `python -m src.run --stage test` sau khi cấu hình được khóa.
+Nội dung phía dưới mô tả starter ban đầu; các chỉ dẫn TODO không còn mô tả trạng thái code hiện tại.
+
 Bộ khởi động **tùy chọn** cho lab cá nhân. Docker Compose tạo PostgreSQL + pgvector local; các file trong `src/` là **khung pseudocode có TODO**, chưa đọc tài liệu, tạo embedding, lưu vector hay chạy benchmark. Bạn cần tự hiện thực. Vẫn có thể chọn Qdrant, Chroma hoặc vector store tương đương theo [GUIDE.md](../GUIDE.md).
 
 ## Cấu trúc
